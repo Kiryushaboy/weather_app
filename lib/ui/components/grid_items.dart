@@ -30,6 +30,7 @@ class GridItems extends StatelessWidget {
             child: ListTile(
               leading: SvgPicture.asset(
                 GridIcons.gridIcons[i],
+                // ignore: deprecated_member_use
                 color: AppColors.black,
               ),
               title: Text(

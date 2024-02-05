@@ -54,6 +54,7 @@ class RowItem extends StatelessWidget {
       children: [
         SvgPicture.asset(
           icon,
+          // ignore: deprecated_member_use
           color: AppColors.black,
         ),
         const SizedBox(height: 18),

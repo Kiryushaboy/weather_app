@@ -17,6 +17,7 @@ class TempratureItems extends StatelessWidget {
       children: [
         SvgPicture.asset(
           AppIcons.maxTemp,
+          // ignore: deprecated_member_use
           color: AppColors.red,
         ),
         const SizedBox(width: 4),
@@ -27,6 +28,7 @@ class TempratureItems extends StatelessWidget {
         const SizedBox(width: 65),
         SvgPicture.asset(
           AppIcons.minTemp,
+          // ignore: deprecated_member_use
           color: AppColors.blue,
         ),
         const SizedBox(width: 4),

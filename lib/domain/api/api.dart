@@ -31,7 +31,6 @@ abstract class Api {
       final lon = coords.lon.toString();
       final response = await dio.get(
           'https://api.openweathermap.org/data/2.5/onecall?lat=$lat&lon=$lon&exclude=hourly,minutely&appid=$apiKey&lang=ru');
-      print(response.data);
       final weatherData = WeatherData.fromJson(response.data);
       return weatherData;
     }
